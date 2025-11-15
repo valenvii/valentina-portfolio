@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
  
 const navItems = [
     {name: "Home", href: "#hero"},
-    {name: "About", href: "#about"},
-    {name: "Skills", href: "#skills"},
-    {name: "Projects", href: "#projects"},
-    {name: "Contact", href: "#contact"},
+    {name: "Sobre mi", href: "#about"},
+    {name: "Habilidades", href: "#skills"},
+    {name: "Proyectos", href: "#projects"},
+    {name: "Contacto", href: "#contact"},
 ];
 
 export const Navbar = () => {

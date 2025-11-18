@@ -3,8 +3,22 @@ import { useEffect, useState } from "react";
 export const StarBackground = () => {
   const [stars, setStars] = useState([]);
   const [meteors, setMeteors] = useState([]);
+  const [isDark, setIsDark] = useState(false);
 
     useEffect(() => {
+        const checkTheme = () => {
+            setIsDark(document.documentElement.classList.contains("dark"));
+        };
+
+        checkTheme();
+
+        const observer = new MutationObserver(checkTheme);
+        observer.observe(document.documentElement, { attributes: true });
+
+        return () => observer.disconnect();
+    }, []);
+
+    useEffect(() => {   
         generateStars();
         generateMeteors();
 
@@ -61,7 +75,7 @@ export const StarBackground = () => {
             {stars.map((star) => (
                 <div 
                     key={star.id}
-                    className="star animate-pulse-subtle" 
+                    className={`${isDark ? "star-dark" : "star-light"} animate-pulse-subtle`}
                     style={{
                         width: star.size + "px",
                         height: star.size + "px",
@@ -76,7 +90,7 @@ export const StarBackground = () => {
             {meteors.map((meteor) => (
                 <div 
                     key={meteor.id}
-                    className="meteor animate-meteor" 
+                    className={`${isDark ? "meteor-dark" : "meteor-light"} animate-meteor`}
                     style={{
                         width: meteor.size * 20 + "px",
                         height: meteor.size * 2 + "px",

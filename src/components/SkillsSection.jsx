@@ -4,21 +4,21 @@ import { useTranslation } from 'react-i18next';
 
 const skills = [
   // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
-  { name: "TypeScript", level: 85, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
+  { name: "HTML/CSS", level: "advanced", category: "frontend" },
+  { name: "JavaScript", level: "medium", category: "frontend" },
+  { name: "React", level: "basic", category: "frontend" },
+  { name: "TypeScript", level: "basic", category: "frontend" },
+  { name: "Tailwind CSS", level: "basic", category: "frontend" },
 
   // Backend
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Express", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
+  { name: "Node.js", level: "basic", category: "backend" },
+  { name: "Express", level: "basic", category: "backend" },
+  { name: "MongoDB", level: "basic", category: "backend" },
+  { name: "PostgreSQL", level: "basic", category: "backend" },
 
   // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
+  { name: "Git/GitHub", level: "medium", category: "tools" },
+  { name: "VS Code", level: "medium", category: "tools" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
@@ -68,14 +68,8 @@ export const SkillsSection = () => {
                                     {skill.name}
                                 </h3>
                             </div>   
-                            <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                                <div 
-                                    className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out" 
-                                    style={{width: skill.level + "%"}}
-                                />
-                            </div>   
                             <div className="text-right mt-1">
-                               <span className="text-sm text-muted-foreground">{skill.level}%</span> 
+                               <span className="text-md text-muted-foreground">{t(skill.level)}</span> 
                             </div>                              
                         </div>
                     ))}

@@ -37,7 +37,10 @@ i18n
               "design_info" : "design_info....",
               "projects_info" : "projects_info....",
               "contact_me_bio" : "contact_me_bio...`",
-              "toiggle_language" : "Traducir a Español"
+              "toiggle_language" : "Traducir a Español",
+              "advanced": "Advanced",
+              "medium" : "Medium",
+              "basic":"Basic"
             }
           },
           es: {
@@ -72,7 +75,10 @@ i18n
               "design_info" : "design_info....",
               "projects_info" : "projects_info....",
               "contact_me_bio" : "contact_me_bio...`",
-              "toggle_language":"Translate to English"
+              "toggle_language":"Translate to English",
+              "advanced": "Avanzado",
+              "medium" : "Intermedio",
+              "basic": "Básico"
             }
           }
         },

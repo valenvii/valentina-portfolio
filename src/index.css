@@ -64,15 +64,15 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
+    --background: 330 100% 98%;        /* very light pink */
+    --foreground: 330 20% 20%;         /* dark desaturated plum */
 
-    --card: 0 0% 100%;
+    --card: 0 0% 100%;                 /* white card */
 
-    --primary: 250 47% 60%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 330 70% 60%;            /* vibrant medium pink */
+    --primary-foreground: 330 100% 98%;/* almost white pink */
 
-    --border: 214 32% 91%;
+    --border: 330 30% 85%;             /* soft pink border */
   }
 
   .dark {
@@ -81,7 +81,8 @@
 
     --card: 222 47% 8%;
 
-    --primary: 250 65% 65%;
+    /* Darker, softer pink for dark mode */
+    --primary: 330 45% 55%;
     --primary-foreground: 213 31% 91%;
 
     --border: 217 33% 20%;
@@ -144,13 +145,23 @@
          hover:scale-105 active:scale-95;
 }
 
-@utility star {
+.star-light {
+  @apply absolute rounded-full bg-[#d1d1d1];
+  box-shadow: 0 0 6px 2px rgba(150, 150, 150, 0.4);
+}
+
+.star-dark {
   @apply absolute rounded-full bg-white;
   box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
 }
 
-@utility meteor {
-  @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
+.meteor-light {
+  @apply absolute rounded-full bg-gradient-to-r from-[#d1d1d1] via-[#e5e5e5] to-transparent;
+  box-shadow: 0 0 6px 3px rgba(150, 150, 150, 0.3);
+}
+
+.meteor-dark {
+  @apply absolute rounded-full bg-gradient-to-r from-white via-white to-transparent;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 

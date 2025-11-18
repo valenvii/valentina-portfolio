@@ -29,7 +29,6 @@ export const SkillsSection = () => {
         const filteredSkills = skills.filter(
             (skill) => activeCategory === "all" || skill.category === activeCategory
         )
-
     return (
         <section 
             id="skills"
@@ -69,7 +68,7 @@ export const SkillsSection = () => {
                                 </h3>
                             </div>   
                             <div className="text-right mt-1">
-                               <span className="text-md text-muted-foreground">{t(skill.level)}</span> 
+                               <span className={`level-badge level-${skill.level}`}>{t(skill.level)}</span> 
                             </div>                              
                         </div>
                     ))}

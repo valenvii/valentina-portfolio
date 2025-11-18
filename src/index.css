@@ -64,28 +64,34 @@
 
 @layer base {
   :root {
-    --background: 330 100% 98%;        /* very light pink */
-    --foreground: 330 20% 20%;         /* dark desaturated plum */
+    --background: 330 100% 98%;        
+    --foreground: 330 20% 20%;         
 
-    --card: 0 0% 100%;                 /* white card */
+    --card: 0 0% 100%;                
 
-    --primary: 330 70% 60%;            /* vibrant medium pink */
-    --primary-foreground: 330 100% 98%;/* almost white pink */
+    --primary: 330 70% 60%;           
+    --primary-foreground: 330 100% 98%;
 
-    --border: 330 30% 85%;             /* soft pink border */
+    --border: 330 30% 85%;    
+    
+    --skill-basic: 330 60% 95%;    
+    --skill-medium: 330 70% 85%;    
+    --skill-advanced: 330 60% 70%;
   }
-
   .dark {
     --background: 222 47% 4%;
     --foreground: 213 31% 91%;
 
     --card: 222 47% 8%;
 
-    /* Darker, softer pink for dark mode */
     --primary: 330 45% 55%;
     --primary-foreground: 213 31% 91%;
 
     --border: 217 33% 20%;
+
+    --skill-basic: 330 22% 22%;       
+    --skill-medium: 330 30% 34%;     
+    --skill-advanced: 330 38% 46%;    
   }
 
   * {
@@ -143,6 +149,25 @@
   @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
          transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
          hover:scale-105 active:scale-95;
+}
+
+.level-basic {
+  background-color: hsl(var(--skill-basic));
+  color: hsl(var(--foreground));
+}
+
+.level-medium {
+  background-color: hsl(var(--skill-medium));
+  color: hsl(var(--foreground));
+}
+
+.level-advanced {
+  background-color: hsl(var(--skill-advanced));
+  color: hsl(var(--foreground));
+}
+
+.level-badge {
+  @apply inline-block px-3 py-1 rounded-full text-sm font-medium;
 }
 
 .star-light {

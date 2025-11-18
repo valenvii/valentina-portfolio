@@ -6,12 +6,14 @@ import { ProjectsSection } from "../components/ProjectsSection"
 import { SkillsSection } from "../components/SkillsSection"
 import { ThemeToggle } from "../components/ThemeToggle"
 import { StarBackground } from "@/components/StarBackground"
+import { LanguageToggle } from "@/components/LanguageToggle"
 
 export const Home = ({}) => {
     return (
         <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
         
-            {/* Theme Toggle */}
+            {/* Theme and Language Toggle */}
+            <LanguageToggle />
             <ThemeToggle />
             {/* Background Effects*/}
             <StarBackground />

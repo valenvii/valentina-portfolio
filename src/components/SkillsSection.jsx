@@ -1,5 +1,7 @@
 import { useState } from "react";
 import {cn} from '@/lib/utils'
+import { useTranslation } from 'react-i18next';
+
 const skills = [
   // Frontend
   { name: "HTML/CSS", level: 95, category: "frontend" },
@@ -15,17 +17,17 @@ const skills = [
   { name: "PostgreSQL", level: 65, category: "backend" },
 
   // Tools
-  { name: "Git/GitHub", level: 90, category: "herramientas" },
-  { name: "VS Code", level: 95, category: "herramientas" },
+  { name: "Git/GitHub", level: 90, category: "tools" },
+  { name: "VS Code", level: 95, category: "tools" },
 ];
 
-const categories = ["todas", "frontend", "backend", "herramientas"];
+const categories = ["all", "frontend", "backend", "tools"];
 
 export const SkillsSection = () => {
-        const [activeCategory, setActiveCategory] = useState("todas")
-
+        const [activeCategory, setActiveCategory] = useState("all")
+        const { t, i18n } = useTranslation();
         const filteredSkills = skills.filter(
-            (skill) => activeCategory === "todas" || skill.category === activeCategory
+            (skill) => activeCategory === "all" || skill.category === activeCategory
         )
 
     return (
@@ -35,7 +37,7 @@ export const SkillsSection = () => {
         >
             <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                    Mis <span className="text-primary"> Habilidades </span>
+                     {t('my')} <span className="text-primary"> {t('skills')} </span>
                 </h2>
 
                 <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -50,7 +52,7 @@ export const SkillsSection = () => {
                                 : "bg-secondary/70 text-foreground hover:bd-secondary"
                             )}
                         > 
-                            {category} 
+                            {t(category)} 
                         </button>
                     ))}
                 </div>

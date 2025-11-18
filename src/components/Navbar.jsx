@@ -1,16 +1,18 @@
 import {cn} from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
- 
+import { useTranslation } from 'react-i18next';
+
 const navItems = [
-    {name: "Home", href: "#hero"},
-    {name: "Sobre mi", href: "#about"},
-    {name: "Habilidades", href: "#skills"},
-    {name: "Proyectos", href: "#projects"},
-    {name: "Contacto", href: "#contact"},
+  { name: "home", href: "#hero" },
+  { name: "about_me", href: "#about" },
+  { name: "skills", href: "#skills" },
+  { name: "projects", href: "#projects" },
+  { name: "contact", href: "#contact" }
 ];
 
 export const Navbar = () => {
+    const { t, i18n } = useTranslation();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -36,7 +38,7 @@ export const Navbar = () => {
                     href="hero"
                 >
                     <span className="relative z-10">
-                        <span className="text-glow text-foreground"> Valentina </span> Portfolio
+                        <span className="text-glow text-foreground"> {t('valentina')} </span> Portfolio
                     </span>
                 </a>
 
@@ -44,7 +46,7 @@ export const Navbar = () => {
                 <div className="hidden md:flex space-x-8"> 
                     {navItems.map((item, key) => (
                         <a key={key} href={item.href} className="text-foreground/80 hover:text-primary transition-colors duration-300">
-                            {item.name}
+                            {t(item.name)}
                         </a>
                     ))}
                 </div>

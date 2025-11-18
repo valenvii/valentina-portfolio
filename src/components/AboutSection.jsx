@@ -1,6 +1,9 @@
 import { Briefcase, Code, User } from "lucide-react"
+import { useTranslation } from 'react-i18next';
 
 export const AboutSection = () => {
+    const { t, i18n } = useTranslation();
+
     return(
         <section 
             id="about" 
@@ -8,30 +11,30 @@ export const AboutSection = () => {
         > 
             <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                    Sobre <span className="text-primary"> Mi</span>
+                    {t('about')} <span className="text-primary"> {t('me')}</span>
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 fap-12 items-center">
                     <div className="space-y-6">
                         <h3 className="text-2xl font-semibold"> 
-                            Estudiante ... 
+                            {t('about_student')}
                         </h3>
 
                         <p className="text-muted-foreground"> 
-                            Con experiencia en .. me especializo en .. 
+                             {t('about_experience')}. 
                         </p>
 
                         <p className="text-muted-foreground"> 
-                            me apasiona...
+                            {t('about_passionate')}
                         </p>
 
                         <div className="flex flex-col sm:flex-row fap-4 pt-4 justify-center">
                             <a href="#contact" className="cosmic-button">
-                                Contactame 
+                                <p> {t('contact_me')} {t('_me')}  </p>
                             </a>
 
                             <a href="" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
-                                Descarga mi CV
+                                {t('cv')}
                             </a>
                         </div>
                     </div>
@@ -43,9 +46,9 @@ export const AboutSection = () => {
                                     <Code className="h-6 w-6 text-primary" />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg"> Web development</h4>
+                                    <h4 className="font-semibold text-lg"> {t('web_development')} </h4>
                                     <p className="text-muted-foreground">
-                                        Creando websites responsive ... 
+                                        {t('web_development_info')}
                                     </p>
                                 </div>
                             </div>
@@ -57,9 +60,9 @@ export const AboutSection = () => {
                                     <User className="h-6 w-6 text-primary" />
                                 </div>
                                  <div className="text-left">
-                                    <h4 className="font-semibold text-lg"> Diseño </h4>
+                                    <h4 className="font-semibold text-lg"> {t('design')} </h4>
                                     <p className="text-muted-foreground">
-                                        Creando interfaces intuitivas .. 
+                                        {t('design_info')} 
                                     </p>
                                 </div>
                             </div>
@@ -71,9 +74,9 @@ export const AboutSection = () => {
                                     <Briefcase className="h-6 w-6 text-primary" />
                                 </div>
                                  <div className="text-left">
-                                    <h4 className="font-semibold text-lg"> Proyectos </h4>
+                                    <h4 className="font-semibold text-lg"> {t('projects')}  </h4>
                                     <p className="text-muted-foreground">
-                                        .......
+                                        {t('projects_info')}
                                     </p>
                                 </div>
                             </div>

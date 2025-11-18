@@ -40,7 +40,8 @@ i18n
               "toiggle_language" : "Traducir a Español",
               "advanced": "Advanced",
               "medium" : "Medium",
-              "basic":"Basic"
+              "basic":"Basic",
+              "page_title": "My Portfolio"
             }
           },
           es: {
@@ -78,7 +79,8 @@ i18n
               "toggle_language":"Translate to English",
               "advanced": "Avanzado",
               "medium" : "Intermedio",
-              "basic": "Básico"
+              "basic": "Básico",
+              "page_title": "Mi Portfolio"
             }
           }
         },

@@ -7,8 +7,11 @@ import { SkillsSection } from "../components/SkillsSection"
 import { ThemeToggle } from "../components/ThemeToggle"
 import { StarBackground } from "@/components/StarBackground"
 import { LanguageToggle } from "@/components/LanguageToggle"
+import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const Home = ({}) => {
+    document.title = "Mi Portfolio";
     return (
         <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
         

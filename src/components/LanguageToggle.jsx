@@ -10,6 +10,7 @@ export const LanguageToggle = () => {
   useEffect(() => {
     const storedLanguage = localStorage.getItem("language");
     if (storedLanguage === "english") {
+      i18n.changeLanguage("en");
       setIsEnglish(true);
       document.documentElement.classList.add("english");
     } else {

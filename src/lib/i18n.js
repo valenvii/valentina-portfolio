@@ -36,7 +36,8 @@ i18n
               "design" : "design....",
               "design_info" : "design_info....",
               "projects_info" : "projects_info....",
-              "contact_me_bio" : "contact_me_bio...`"
+              "contact_me_bio" : "contact_me_bio...`",
+              "toiggle_language" : "Traducir a Español"
             }
           },
           es: {
@@ -70,7 +71,8 @@ i18n
               "design" : "design....",
               "design_info" : "design_info....",
               "projects_info" : "projects_info....",
-              "contact_me_bio" : "contact_me_bio...`"
+              "contact_me_bio" : "contact_me_bio...`",
+              "toggle_language":"Translate to English"
             }
           }
         },

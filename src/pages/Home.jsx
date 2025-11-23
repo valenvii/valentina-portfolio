@@ -14,14 +14,17 @@ export const Home = ({}) => {
     document.title = "Mi Portfolio";
     return (
         <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-        
-            {/* Theme and Language Toggle */}
-            <LanguageToggle />
-            <ThemeToggle />
+                <div className="container mx-auto max-w-5xl flex items-center justify-between py-4">
+                    {/* Theme and Language Toggle */}
+                    <LanguageToggle />
+                    <ThemeToggle />
+                    {/* Navbar */}
+                    <Navbar />
+                </div>    
+
             {/* Background Effects*/}
             <StarBackground />
-            {/* Navbar */}
-            <Navbar />
+            
             {/* Main Content */}
             <main>
                 <HeroSection />

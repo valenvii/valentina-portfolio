@@ -1,5 +1,5 @@
 
-import { Briefcase, Code, GraduationCap, School } from "lucide-react"
+import { Briefcase, GraduationCap, School } from "lucide-react"
 import { useTranslation } from 'react-i18next';
 
 export const AboutSection = () => {
@@ -34,7 +34,7 @@ export const AboutSection = () => {
                                 <p> {t('contact_me')} {t('_me')}  </p>
                             </a>
 
-                            <a href="https://online.fliphtml5.com/iqhnz/ofnu/" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
+                            <a href="" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
                                 {t('cv')}
                             </a>
                         </div>

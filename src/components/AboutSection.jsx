@@ -15,7 +15,7 @@ export const AboutSection = () => {
                     {t('about')} <span className="text-primary"> {t('me')}</span>
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 fap-12 items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
                         <h3 className="text-2xl font-semibold"> 
                             {t('about_student')}
@@ -29,7 +29,7 @@ export const AboutSection = () => {
                             {t('about_passionate')}
                         </p>
 
-                        <div className="flex flex-col sm:flex-row fap-4 pt-4 justify-center">
+                        <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                             <a href="#contact" className="cosmic-button">
                                 <p> {t('contact_me')} {t('_me')}  </p>
                             </a>

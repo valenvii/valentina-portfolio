@@ -17,7 +17,7 @@ const skills = [
     { name: "Tailwind CSS", level: "basic", category: "frontend" },
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["all", "frontend", "programming_languages", "tools"];
 
 export const SkillsSection = () => {
         const [activeCategory, setActiveCategory] = useState("all")

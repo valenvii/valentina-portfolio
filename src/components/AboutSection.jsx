@@ -1,3 +1,4 @@
+
 import { Briefcase, Code, GraduationCap, School } from "lucide-react"
 import { useTranslation } from 'react-i18next';
 

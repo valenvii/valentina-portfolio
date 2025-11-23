@@ -8,6 +8,7 @@ i18n
           en: {
             translation: {
               "home": "Home",
+              "_english": "English",
               "about": "About",
               "about_me": "About Me",
               "me": "Me",
@@ -34,15 +35,18 @@ i18n
               "web_development" : "University Programming Analyst",
               "web_development_info" : "Facultad de Informática, UNCo. I am continuing my studies to obtain my Bachelor’s Degree in CS.",
               "design" : "Community",
-              "design_info" : "Director of the Extension Project “Prolog for Teens.” Carrying out activities that help develop logical thinking in teenagers, promoting the connection between academia and society.",
-              "projects_info" : "In my 2nd year as a Teaching Assistant. I worked in several courses, such as Data Structures, Principles of Programming Language Design, Computation Theory I and II.",
+              "design_info" : "Director of the Extension Project \“Prolog for Teens.\” \nCarrying out activities that help develop logical thinking in teenagers, promoting the connection between academia and society.",
+              "projects_info" : "In my 2nd year as a Teaching Assistant.\n I worked in several courses, such as Data Structures, Principles of Programming Language Design, Computation Theory I and II.",
               "contact_me_bio" : "contact_me_bio...`",
               "toggle_language" : "Traducir a Español",
               "advanced": "Advanced",
               "medium" : "Medium",
               "basic":"Basic",
               "page_title": "My Portfolio",
-              "work": "Work"
+              "work": "Work",
+              "programming_languages": "Languages",
+              "lang": "Languages",
+              "languages_info": "English — Advanced: I passed the Cambridge FCE exam with an A grade.\n German — Basic: I have basic knowledge of German after two years of study."
             }
           },
           es: {
@@ -50,6 +54,7 @@ i18n
               "home": "Home",
               "about": "Sobre",
               "about_me": "Sobre Mí",
+              "_english": "Inglés",
               "me": "Mí",
               "my": "Mis",
               "valentina" : "Valentina: ", 
@@ -74,15 +79,18 @@ i18n
               "web_development" : "Analista Programadora Universitaria",
               "web_development_info" : "Facultad de Informática, UNCo. Continuo estudiando para obtener la Lic. en Ciencias de la Computación",
               "design" : "Comunidad",
-              "design_info" : "Directora del Proyecto de Extensión: \"Prolog for Teens\". Realizando actividades que desarrollen el pensamiento lógico en adolescentes, promoviendo el vínculo entre la academia y la sociedad.",
-              "projects_info" : "En mi 2do año como ayudante. Trabajé en distintas materias, como Estructuras de Datos, Principios de Lenguajes de la Programación, Teoría de la Computación I y II",
+              "design_info" : "Directora del Proyecto de Extensión: \"Prolog for Teens\". \nRealizando actividades que desarrollen el pensamiento lógico en adolescentes, promoviendo el vínculo entre la academia y la sociedad.",
+              "projects_info" : "En mi 2do año como ayudante. \nTrabajé en distintas materias, como Estructuras de Datos, Principios de Lenguajes de la Programación, Teoría de la Computación I y II",
               "contact_me_bio" : "contact_me_bio...`",
               "toggle_language":"Translate to English",
               "advanced": "Avanzado",
               "medium" : "Intermedio",
               "basic": "Básico",
               "page_title": "Mi Portfolio",
-              "work": "Trabajo"
+              "work": "Trabajo",
+              "programming_languages": "Lenguajes",
+              "lang": "Idiomas",
+              "languages_info": "Inglés — Avanzado: Aprobé el examen Cambridge FCE con calificación A.\n Alemán — Básico: Cuento con conocimientos básicos de alemán, tras dos años de estudio."
             }
           }
         },

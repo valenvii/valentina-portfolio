@@ -1,5 +1,5 @@
 
-import { Briefcase, GraduationCap, School } from "lucide-react"
+import { Briefcase, GraduationCap, Languages, School } from "lucide-react"
 import { useTranslation } from 'react-i18next';
 
 export const AboutSection = () => {
@@ -10,7 +10,7 @@ export const AboutSection = () => {
             id="about" 
             className="py-24 px-4 relative"
         > 
-            <div className="container mx-auto max-w-5xl">
+            <div className="container mx-auto max-w-6xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
                     {t('about')} <span className="text-primary"> {t('me')}</span>
                 </h2>
@@ -78,6 +78,20 @@ export const AboutSection = () => {
                                     <h4 className="font-semibold text-lg"> {t('work')}  </h4>
                                     <p className="text-muted-foreground">
                                         {t('projects_info')}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="gradient-border p-6 card-hover">
+                            <div className="flex items-start gap-4">
+                                <div className="p-3 rounded-full bg-primary/10">
+                                    <Languages className="h-6 w-6 text-primary" />
+                                </div>
+                                 <div className="text-left">
+                                    <h4 className="font-semibold text-lg"> {t('lang')}  </h4>
+                                    <p className="text-muted-foreground">
+                                        {t('languages_info')}
                                     </p>
                                 </div>
                             </div>

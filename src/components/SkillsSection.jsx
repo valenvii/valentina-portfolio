@@ -3,22 +3,18 @@ import {cn} from '@/lib/utils'
 import { useTranslation } from 'react-i18next';
 
 const skills = [
-  // Frontend
-  { name: "HTML/CSS", level: "advanced", category: "frontend" },
-  { name: "JavaScript", level: "medium", category: "frontend" },
-  { name: "React", level: "basic", category: "frontend" },
-  { name: "TypeScript", level: "basic", category: "frontend" },
-  { name: "Tailwind CSS", level: "basic", category: "frontend" },
+  // Intermedio
+    { name: "C", level: "medium", category: "programming_languages"},
+    { name: "Java", level: "medium", category: "programming_languages" },
 
-  // Backend
-  { name: "Node.js", level: "basic", category: "backend" },
-  { name: "Express", level: "basic", category: "backend" },
-  { name: "MongoDB", level: "basic", category: "backend" },
-  { name: "PostgreSQL", level: "basic", category: "backend" },
-
-  // Tools
-  { name: "Git/GitHub", level: "medium", category: "tools" },
-  { name: "VS Code", level: "medium", category: "tools" },
+  // Básico
+    { name: "Git/GitHub", level: "basic", category: "tools" },
+    { name: "Node.js", level: "basic", category: "programming_languages" },
+    { name: "SQL", level: "basic", category: "programming_languages" },
+    { name: "HTML/CSS", level: "basic", category: "frontend" },
+    { name: "JavaScript", level: "basic", category: "programming_languages" },
+    { name: "React", level: "basic", category: "frontend" },
+    { name: "Tailwind CSS", level: "basic", category: "frontend" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];

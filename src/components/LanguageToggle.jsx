@@ -40,7 +40,7 @@ export const LanguageToggle = () => {
     <button
       onClick={toggleLanguage}
       className={cn(
-        "fixed max-sm:hidden top-5 left-5 z-50 p-2 rounded-full transition-colors duration-300",
+        "fixed max-sm:hidden top-3 left-3 z-50 p-2 rounded-full transition-colors duration-300",
         "focus:outlin-hidden"
       )}
     >

@@ -17,12 +17,10 @@ export const Home = ({}) => {
             {/* Theme and Language Toggle */}
             <LanguageToggle />
             <ThemeToggle />
-            {/* Navbar */}
-            <Navbar /> 
-
             {/* Background Effects*/}
             <StarBackground />
-            
+            {/* Navbar */}
+            <Navbar /> 
             {/* Main Content */}
             <main>
                 <HeroSection />

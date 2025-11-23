@@ -55,7 +55,7 @@ i18n
               "skills": "Habilidades",
               "projects": "Proyectos",
               "contact": "Contacto",
-              "scroll": "Scrolleá",
+              "scroll": "Scroll",
               "hi": "Hola! soy",
               "contact_me":"Contacta",
               "cv": "Descargá mi CV",

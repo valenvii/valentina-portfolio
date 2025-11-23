@@ -37,7 +37,7 @@ i18n
               "design_info" : "Director of the extension project “Prolog for Teens.” Carrying out activities that help develop logical thinking in teenagers, promoting the connection between academia and society.",
               "projects_info" : "projects_info....",
               "contact_me_bio" : "contact_me_bio...`",
-              "toiggle_language" : "Traducir a Español",
+              "toggle_language" : "Traducir a Español",
               "advanced": "Advanced",
               "medium" : "Medium",
               "basic":"Basic",

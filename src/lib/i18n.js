@@ -52,6 +52,7 @@ i18n
               "juego_vida": "Conway's Game of Life",
               "programming_languages": "Languages",
               "lang": "Languages",
+              "check_github": "Check my GitHub",
               "juego_vida_descr": "Mobile application developed as an academic project for the course “Programming Laboratory,” focused on applying the practical concepts learned throughout the class.",
               "unco_descr": "Mobile application currently in development, designed to allow UNCo students to easily access discounts and benefits at various local businesses.",
               "languages_info": "English — Advanced: I passed the Cambridge FCE exam with an A grade.\n German — Basic: I have basic knowledge of German after two years of study."
@@ -100,6 +101,7 @@ i18n
               "advanced": "Avanzado",
               "medium" : "Intermedio",
               "basic": "Básico",
+              "check_github": "Mirá mi GitHub",
               "page_title": "Mi Portfolio",
               "juego_vida": "El Juego de la Vida de Conway",
               "juego_vida_descr":"Aplicación móvil desarrollada como proyecto académico para la materia \“Laboratorio de Programación\”, enfocada en aplicar conceptos prácticos aprendidos durante el curso.",

@@ -7,7 +7,8 @@ const projects = [
     title: "unco_descuentos",
     description: "unco_descr",
     image: "/projects/unco-descuentos.png",
-    tags: ["ReactNative", "NestJS", "SQLLite"],
+    tags: ["ReactNative", "NestJS", "SQLite"],
+    img_url: "https://online.fliphtml5.com/zdcfu/jxnm/",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const projects = [
       "portfolio_descr",
     image: "/projects/portfolio.png",
     tags: ["TailwindCSS", "ReactJS"],
+    img_url: "https://online.fliphtml5.com/zdcfu/vmhm/",
   },
   {
     id: 3,
@@ -24,6 +26,7 @@ const projects = [
       "juego_vida_descr",
     image: "/projects/juego-vida.png",
     tags: ["ReactNative", "Node.js"],
+    img_url: "https://online.fliphtml5.com/iqhnz/tmjc/",
   },
 ];
 
@@ -68,6 +71,17 @@ export const ProjectsSection = () => {
                 <p className="text-muted-foreground text-sm mb-4">
                   {t(project.description)}
                 </p>
+                <div className="flex justify-between items-center">
+                  <div className="flex space-x-3">
+                    <a
+                      href={project.img_url}
+                      target="_blank"
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           ))}
